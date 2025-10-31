@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AI Info</title>
+<meta name="description" content="Practical AI guidance, training, and Fractional AI Officer services to help South African companies adopt AI responsibly and effectively." />
+
+<style>
+:root{
+  --brand:#0a66c2;
+  --ink:#ffffff;
+  --muted:#cbd3e1;
+  --bg:#0f1c33;
+  --card:#142544;
+  --border:#203656;
+  --radius:14px;
+}
+*{box-sizing:border-box;}
+body{
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.6;
+}
+a{color:#4cb5ff;text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+/* NAV */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(15,28,51,.9);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--border);
+}
+.container{max-width:1100px;margin:0 auto;padding:0 16px;}
+nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:14px 0;}
+nav a{
+  padding:8px 12px;border-radius:12px;
+  color:white;font-weight:500;
+}
+nav a:hover,nav a[aria-current="page"]{
+  background:rgba(255,255,255,0.1);
+  text-decoration:none;
+}
+
+/* HERO */
+.hero{
+  width:100%;
+  padding:80px 20px 110px;
+  text-align:center;
+  background:linear-gradient(145deg,#0d1730,#15294d 40%, #0b1324);
+}
+.hero img.logo{
+  max-width:260px;
+  margin-bottom:26px;
+  filter:drop-shadow(0 4px 14px rgba(0,0,0,.45));
+}
+.hero h1{
+  font-size:clamp(1.8rem,3.6vw,3rem);
+  margin:0 0 16px;
+  font-weight:700;
+}
+.hero p{
+  color:var(--muted);
+  font-size:1.1rem;
+  max-width:700px;
+  margin:0 auto 32px;
+}
+
+/* HERO BUTTONS */
+.hero-buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  justify-content:center;
+  margin-top:20px;
+}
+.hero-buttons a{
+  display:inline-block;
+  padding:12px 20px;
+  border-radius:10px;
+  font-weight:600;
+  border:1px solid rgba(255,255,255,.25);
+}
+.hero-buttons a.primary{
+  background:#ff7b34;
+  border:none;
+  color:#fff;
+}
+.hero-buttons a.secondary{
+  background:#1f3a61;
+}
+.hero-buttons a:hover{
+  opacity:.85;
+}
+
+/* SECTIONS */
+section{padding:70px 0;}
+h2{
+  font-size:2rem;
+  margin-bottom:20px;
+}
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:20px;
+}
+.grid{display:grid;gap:18px;}
+@media(min-width:750px){.grid.cols-3{grid-template-columns:repeat(3,1fr);}}
+
+/* FOOTER */
+footer{
+  border-top:1px solid var(--border);
+  padding:28px 0;
+  text-align:center;
+  color:var(--muted);
+  font-size:.9rem;
+}
+
+/* WhatsApp FAB */
+.whatsapp-fab{
+  position:fixed;right:18px;bottom:18px;
+  width:56px;height:56px;border-radius:50%;
+  display:grid;place-items:center;
+  background:#25D366;color:#fff;
+  box-shadow:0 10px 18px rgba(0,0,0,.25);
+  text-decoration:none;z-index:9999;
+}
+.whatsapp-fab svg{width:30px;height:30px;}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav role="navigation">
+      <ul>
+        <li><a href="#hero" aria-current="page">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#ai-officer">AI Officer</a></li>
+        <li><a href="#newsletter">Newsletter</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section id="hero" class="hero">
+  <img src="/images/ai_logo.png" alt="AI Info Logo" class="logo" />
+  <h1>Practical AI guidance & training for South African organisations</h1>
+  <p>We cut through hype & jargon. Clear, simple, real-world AI support for business leaders — including hands-on help and a Fractional AI Officer option.</p>
+
+  <div class="hero-buttons">
+    <a href="#contact" class="primary">Book Consult</a>
+    <a href="#ai-officer" class="secondary">AI Officer</a>
+    <a href="#newsletter" class="secondary">AI to Eye</a>
+    <a href="#products" class="secondary">Products</a>
+  </div>
+</section>
+
+<main class="container">
+
+<section id="products">
+  <h2>Products & Services</h2>
+  <div class="grid cols-3">
+    <div class="card"><h3>Customer-facing AI Bots</h3><p>Sales & support bots tailored to your business.</p></div>
+    <div class="card"><h3>Process Automation</h3><p>Eliminate repetitive tasks & speed execution.</p></div>
+    <div class="card"><h3>Compliance AI</h3><p>AI-powered policy & regulatory checklists.</p></div>
+    <div class="card"><h3>Minutes & Meetings</h3><p>Automatic minute-taking & action tracking.</p></div>
+    <div class="card"><h3>Contract Intelligence</h3><p>Extract, summarise & analyse key clauses fast.</p></div>
+    <div class="card"><h3>Tender Alerts</h3><p>Monitor & alert for relevant opportunities.</p></div>
+    <div class="card"><h3>AI-Optimised Websites</h3><p>SEO + AI-enhanced search + conversion focus.</p></div>
+    <div class="card"><h3>Content Engine</h3><p>Social, blog & video creation support.</p></div>
+    <div class="card"><h3>Knowledge Bases</h3><p>Turn your organisation into an AI-accessible asset.</p></div>
+  </div>
+</section>
+
+<section id="ai-officer">
+  <h2>Fractional AI Officer</h2>
+  <div class="card">
+    <p>Bring strategic AI capability without hiring full-time. We guide adoption, training, compliance & delivery — keeping AI safe, useful & aligned with your business.</p>
+    <ul>
+      <li>Quarterly roadmap & KPIs</li>
+      <li>AI safety & governance</li>
+      <li>Training & enablement</li>
+      <li>Automation pipeline & delivery</li>
+    </ul>
+    <a href="#contact">Book an intro call →</a>
+  </div>
+</section>
+
+<section id="newsletter">
+  <h2>AI to Eye — Newsletter</h2>
+  <div class="card">
+    <p>Plain-English AI insights for business leaders.</p>
+    <p>Fresh South African-relevant editions monthly.</p>
+    <a href="#contact">Subscribe →</a>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <form action="https://formsubmit.co/george@aiinfo.co.za" method="POST" class="card" style="display:grid;gap:12px;">
+    <input type="hidden" name="_captcha" value="false">
+    <label>Full Name <input name="name" required></label>
+    <label>Email <input name="email" type="email" required></label>
+    <label>Message <textarea name="message" rows="4" required></textarea></label>
+    <button style="padding:10px 14px;background:#ff7b34;border:0;color:#fff;border-radius:10px;cursor:pointer;">Send</button>
+  </form>
+</section>
+
+</main>
+
+<footer>
+  © <span id="year"></span> AI Info — All rights reserved
+</footer>
+
+<a class="whatsapp-fab" href="https://wa.me/27834425723" target="_blank" aria-label="Chat on WhatsApp">
+<svg viewBox="0 0 32 32" fill="currentColor"><path d="M19.11 17.07..."/></svg>
+</a>
+
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+
+</body>
+</html>
