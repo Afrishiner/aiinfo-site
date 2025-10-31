@@ -1,112 +1,118 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>AI Info</title>
-<meta name="description" content="Practical AI guidance, training, and Fractional AI Officer services to help organisations adopt AI responsibly and effectively." />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Info</title>
+  <meta name="description" content="Practical AI guidance, training, and Fractional AI Officer services to help South African companies adopt AI responsibly and effectively." />
 
-<style>
-:root{
-  --brand:#0a66c2;
-  --ink:#ffffff;
-  --muted:#cbd3e1;
-  --bg:#0f1c33;
-  --card:#142544;
-  --border:#203656;
-  --radius:14px;
-}
-*{box-sizing:border-box;}
-body{
-  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-  margin:0;
-  background:var(--bg);
-  color:var(--ink);
-  line-height:1.6;
-}
-a{color:#4cb5ff;text-decoration:none;}
-a:hover{text-decoration:underline;}
-header{
-  position:sticky;top:0;z-index:50;
-  background:rgba(15,28,51,.9);
-  backdrop-filter:blur(10px);
-  border-bottom:1px solid var(--border);
-}
-.container{max-width:1100px;margin:0 auto;padding:0 16px;}
-nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:14px 0;}
-nav a{
-  padding:8px 12px;border-radius:12px;color:white;font-weight:500;
-}
-nav a:hover,nav a[aria-current="page"]{
-  background:rgba(255,255,255,0.1);text-decoration:none;
-}
-.hero{
-  width:100%;
-  padding:80px 20px 110px;
-  text-align:center;
-  background:linear-gradient(145deg,#0d1730,#15294d 40%, #0b1324);
-}
-.hero img.logo{
-  max-width:260px;margin-bottom:26px;
-  filter:drop-shadow(0 4px 14px rgba(0,0,0,.45));
-}
-.hero h1{
-  font-size:clamp(1.8rem,3.6vw,3rem);
-  margin:0 0 16px;font-weight:700;
-}
-.hero p{
-  color:var(--muted);font-size:1.1rem;
-  max-width:700px;margin:0 auto 32px;
-}
-.hero-buttons{
-  display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:20px;
-}
-.hero-buttons a{
-  padding:12px 20px;border-radius:10px;font-weight:600;
-  border:1px solid rgba(255,255,255,.25);
-}
-.hero-buttons a.primary{background:#ff7b34;border:none;color:#fff;}
-.hero-buttons a.secondary{background:#1f3a61;}
-.hero-buttons a:hover{opacity:.85;}
-section{padding:70px 0;}
-h2{font-size:2rem;margin-bottom:20px;}
-.card{
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:var(--radius);
-  padding:20px;
-}
-.grid{display:grid;gap:18px;}
-@media(min-width:750px){.grid.cols-3{grid-template-columns:repeat(3,1fr);}}
+  <style>
+    :root{
+      --brand:#0a66c2;
+      --accent:#ff7b34;
+      --ink:#ffffff;
+      --muted:#cbd3e1;
+      --bg:#0f1c33;
+      --card:#142544;
+      --border:#203656;
+      --radius:14px;
+    }
+    *{box-sizing:border-box;}
+    html,body{height:100%}
+    body{
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      margin:0;
+      background:var(--bg);
+      color:var(--ink);
+      line-height:1.6;
+    }
+    a{color:#4cb5ff;text-decoration:none;}
+    a:hover{text-decoration:underline;}
 
-/* subscribe */
-.subscribe-box input{
-  width:100%;padding:10px;border-radius:8px;
-  border:1px solid #34557a;background:#0f1c33;color:white;
-}
-.subscribe-box button{
-  background:#ff7b34;color:white;border:0;padding:10px 16px;
-  border-radius:8px;cursor:pointer;margin-top:8px;font-weight:600;
-}
-footer{
-  border-top:1px solid var(--border);
-  padding:28px 0;text-align:center;
-  color:var(--muted);font-size:.9rem;
-}
-.whatsapp-fab{
-  position:fixed;right:18px;bottom:18px;width:56px;height:56px;
-  border-radius:50%;display:grid;place-items:center;
-  background:#25D366;color:#fff;box-shadow:0 10px 18px rgba(0,0,0,.25);
-  text-decoration:none;z-index:9999;
-}
-.whatsapp-fab svg{width:30px;height:30px;}
-</style>
+    /* NAV */
+    header{
+      position:sticky;top:0;z-index:50;
+      background:rgba(15,28,51,.9);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--border);
+    }
+    .container{max-width:1100px;margin:0 auto;padding:0 16px;}
+    nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:14px 0;}
+    nav a{
+      padding:8px 12px;border-radius:12px;
+      color:white;font-weight:500;
+    }
+    nav a:hover,nav a[aria-current="page"]{
+      background:rgba(255,255,255,0.1);
+      text-decoration:none;
+    }
+
+    /* HERO */
+    .hero{
+      width:100%;
+      padding:80px 20px 110px;
+      text-align:center;
+      background:linear-gradient(145deg,#0d1730,#15294d 40%, #0b1324);
+    }
+    .hero img.logo{
+      max-width:260px;
+      margin-bottom:26px;
+      filter:drop-shadow(0 4px 14px rgba(0,0,0,.45));
+    }
+    .hero h1{
+      font-size:clamp(1.8rem,3.6vw,3rem);
+      margin:0 0 16px;
+      font-weight:700;
+    }
+    .hero p{
+      color:var(--muted);
+      font-size:1.1rem;
+      max-width:760px;
+      margin:0 auto 28px;
+    }
+    .hero-buttons{
+      display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:20px;
+    }
+    .hero-buttons a{
+      display:inline-block;padding:12px 20px;border-radius:10px;font-weight:600;border:1px solid rgba(255,255,255,.25);
+    }
+    .hero-buttons a.primary{background:var(--accent);border:none;color:#fff;}
+    .hero-buttons a.secondary{background:#1f3a61;}
+    .hero-buttons a:hover{opacity:.9;}
+
+    /* Sections */
+    main{padding:0 0 96px}
+    section{padding:70px 0;}
+    h2{font-size:2rem;margin-bottom:20px;}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;}
+    .grid{display:grid;gap:18px;}
+    @media(min-width:750px){.grid.cols-3{grid-template-columns:repeat(3,1fr);}}
+
+    /* Forms */
+    input,textarea,button{font:inherit}
+    input,textarea{width:100%;padding:11px 12px;border:1px solid var(--border);border-radius:12px;background:#0f1c33;color:#fff}
+    button{padding:11px 14px;border:1px solid var(--accent);background:var(--accent);color:#fff;border-radius:12px;cursor:pointer}
+    button:disabled{opacity:.6;cursor:not-allowed}
+
+    /* Footer */
+    footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;color:var(--muted);font-size:.9rem;}
+
+    /* WhatsApp FAB */
+    .whatsapp-fab{
+      position:fixed;right:18px;bottom:18px;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#25D366;color:#fff;box-shadow:0 10px 18px rgba(0,0,0,.25);text-decoration:none;z-index:9999;
+    }
+    .whatsapp-fab svg{width:30px;height:30px;}
+
+    /* Thank-you overlay */
+    #thankyou-overlay{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.6);z-index:99999}
+    #thankyou-overlay .sheet{background:#0f1c33;border:1px solid var(--border);padding:28px;border-radius:16px;width:min(520px,92%);text-align:center;color:#fff}
+  </style>
 </head>
-
 <body>
+
 <header>
   <div class="container">
-    <nav role="navigation">
+    <nav role="navigation" aria-label="Primary">
       <ul>
         <li><a href="#hero" aria-current="page">Home</a></li>
         <li><a href="#products">Products</a></li>
@@ -118,96 +124,177 @@ footer{
   </div>
 </header>
 
+<!-- Full-width HERO with centered logo + five buttons -->
 <section id="hero" class="hero">
   <img src="images/ai_logo.png" alt="AI Info Logo" class="logo" />
-  <h1>Practical AI guidance & training for South African organisations</h1>
-  <p>Cut through hype. Think business first — AI second. Hands-on help for leaders & teams.</p>
-
+  <h1>Practical AI for South African organisations</h1>
+  <p>Clear, no-hype guidance, training and delivery — including a hands-on <strong>Fractional AI Officer</strong> to keep you moving safely and quickly.</p>
   <div class="hero-buttons">
     <a href="#contact" class="primary">Book Consult</a>
     <a href="#ai-officer" class="secondary">AI Officer</a>
     <a href="#newsletter" class="secondary">AI to Eye</a>
     <a href="#products" class="secondary">Products</a>
+    <a href="#contact" class="secondary">Contact</a>
   </div>
 </section>
 
 <main class="container">
 
-<section id="products">
-<h2>Products & Services</h2>
-<div class="grid cols-3">
-  <div class="card"><h3>Bots</h3><p>Sales & support AI bots.</p></div>
-  <div class="card"><h3>Automation</h3><p>Remove repetitive tasks.</p></div>
-  <div class="card"><h3>Compliance AI</h3><p>Policies & guardrails.</p></div>
-  <div class="card"><h3>Minutes</h3><p>Automated meeting minutes.</p></div>
-  <div class="card"><h3>Contracts</h3><p>Extract & summarise terms.</p></div>
-  <div class="card"><h3>Tenders</h3><p>Monitor & alert system.</p></div>
-  <div class="card"><h3>Web + SEO</h3><p>AI-powered websites.</p></div>
-  <div class="card"><h3>Content Engine</h3><p>Blogs, socials, video scripts.</p></div>
-  <div class="card"><h3>Knowledge AI</h3><p>Internal knowledge models.</p></div>
-</div>
-</section>
+  <!-- Products -->
+  <section id="products">
+    <h2>Products & Services</h2>
+    <div class="grid cols-3">
+      <article class="card">
+        <h3>Discovery Sprint</h3>
+        <p>Map quick wins, risks, and ROI in 10 days.</p>
+      </article>
+      <article class="card">
+        <h3>Automation Pack</h3>
+        <p>Integrations that remove repetitive work.</p>
+      </article>
+      <article class="card">
+        <h3>Fractional AI Officer</h3>
+        <p>Strategy, governance, and capability-building.</p>
+      </article>
+    </div>
+  </section>
 
-<section id="ai-officer">
-<h2>Fractional AI Officer</h2>
-<div class="card">
-<p>Get senior AI guidance without a full-time hire.</p>
-<ul>
-  <li>AI strategy & KPIs</li>
-  <li>Governance & risk</li>
-  <li>Staff training</li>
-  <li>Automation delivery</li>
-</ul>
-<a href="#contact">Book a call →</a>
-</div>
-</section>
+  <!-- Fractional AI Officer -->
+  <section id="ai-officer">
+    <h2>Fractional AI Officer</h2>
+    <div class="card" style="display:grid;gap:12px">
+      <p>Bring senior AI leadership to your team without the full-time cost. We establish a practical AI roadmap, set guardrails, coach your people, and report measurable results to EXCO.</p>
+      <ul>
+        <li>Quarterly roadmap & KPIs</li>
+        <li>Governance: policy, risk, & compliance</li>
+        <li>Capability-building: training & enablement</li>
+        <li>Automation pipeline: from idea → shipped</li>
+      </ul>
+      <div>
+        <a href="#contact" class="btn" style="display:inline-block;padding:10px 14px;border-radius:12px;background:var(--accent);color:#fff;border:1px solid var(--accent)">Book an intro call</a>
+        <a href="https://wa.me/27834425723?text=Hi%20there!%20I%27d%20like%20to%20chat%20about%20your%20Fractional%20AI%20Officer%20service." target="_blank" style="margin-left:8px">Chat on WhatsApp</a>
+      </div>
+    </div>
+  </section>
 
-<section id="newsletter">
-<h2>AI to Eye — Newsletter</h2>
-<div class="card">
-<p>Plain-English AI insights for real business people — not AI geeks 🤖✨</p>
+  <!-- Newsletter -->
+  <section id="newsletter">
+    <h2>AI to Eye — Issue #1</h2>
+    <p class="muted">A light, human read for decision makers — curated insights, quick takeaways, and links to dive deeper.</p>
+    <div class="card" style="display:grid;gap:14px">
+      <h3>1) Headline & one-line takeaway</h3>
+      <p><strong>Gemini and Copilot push deeper into everyday tools.</strong> Expect faster rollout pressure across your stack — pick narrow, high-ROI use cases first.</p>
 
-<p><strong>Latest Edition:</strong> Issue #1 — “AI that actually helps (not hype)”</p>
+      <h3>2) Why it matters for operators</h3>
+      <p>Vendor-led AI features now ship by default (browsers, office suites, home/IoT). You’ll see usage whether you plan for it or not. Formalise guidance, data boundaries, and measurement.</p>
 
-<a href="newsletter.html">📖 Read full newsletter →</a>
+      <h3>3) Quick wins this week</h3>
+      <ul>
+        <li>Ship a <em>one-page</em> AI usage policy addendum for staff.</li>
+        <li>Create a shared “AI Wins” board to capture ideas and outcomes.</li>
+        <li>Identify 2 repetitive workflows for pilot automation (e.g., inbox triage, client notes → CRM).</li>
+      </ul>
 
-<hr style="border-color:#203656; margin:20px 0;">
+      <h3>4) Risks & gotchas</h3>
+      <ul>
+        <li><strong>Default-on deployments</strong> (e.g., office apps) can create shadow processes. Brief your helpdesk.</li>
+        <li>Beware <strong>over-collection</strong> in logs and prompts; turn on data controls.</li>
+        <li>Track <strong>quality drift</strong> — new model versions can subtly change outputs.</li>
+      </ul>
 
-<h3>Subscribe</h3>
-<form action="https://formsubmit.co/george@aiinfo.co.za" method="POST" class="subscribe-box">
-<input type="hidden" name="_subject" value="New AI to Eye Subscriber">
-<input type="hidden" name="_template" value="table">
-<input type="hidden" name="_next" value="https://afrishiner.github.io/aiinfo-site/thank-you.html">
+      <h3>5) Case snippet</h3>
+      <p>Mid-market services firm cut proposal drafting time 35% by templating prompts + auto-assembling packages from a vetted content library. No model change, only workflow change.</p>
 
-<input type="text" name="name" placeholder="Your name" required>
-<br>
-<input type="email" name="email" placeholder="Your email" required>
-<br>
-<button type="submit">Subscribe</button>
-</form>
-</div>
-</section>
+      <h3>6) Tool of the week</h3>
+      <p><a href="https://www.reuters.com/technology/google-rolls-out-gemini-to-chrome-ai-features-for-us-users-2025-09-18/" target="_blank" rel="noopener">Gemini in Chrome</a> — quick page summaries and task automations directly in the browser.</p>
 
-<section id="contact">
-<h2>Contact</h2>
-<form action="https://formsubmit.co/george@aiinfo.co.za" method="POST" class="card" style="display:grid;gap:12px;">
-<input type="hidden" name="_captcha" value="false">
-<label>Name <input name="name" required></label>
-<label>Email <input name="email" type="email" required></label>
-<label>Message <textarea name="message" rows="4" required></textarea></label>
-<button style="padding:10px 14px;background:#ff7b34;border:0;color:#fff;border-radius:10px;cursor:pointer;">Send</button>
-</form>
-</section>
+      <h3>7) Prompt pattern</h3>
+      <pre style="white-space:pre-wrap;background:#0b1324;border:1px solid var(--border);border-radius:12px;padding:12px;color:#fff">You are my &lt;role&gt;. Our goal: &lt;goal&gt;.
+Context you must use: &lt;bullet points&gt;.
+Constraints: &lt;limits, tone, format&gt;.
+Produce: &lt;exact artifact&gt; with &lt;sections&gt;.
+Then: suggest 3 refinements.</pre>
+
+      <h3>8) Read / watch</h3>
+      <ul>
+        <li><a href="https://www.reuters.com/sustainability/boards-policy-regulation/google-adds-gemini-chrome-browser-after-avoiding-antitrust-breakup-2025-09-18/" target="_blank" rel="noopener">Reuters: Google adds Gemini to Chrome</a></li>
+        <li><a href="https://www.theverge.com/news/789412/new-nest-cams-nest-doorbell-launch-price-specs-release-date" target="_blank" rel="noopener">The Verge: New Nest cams built for Gemini</a></li>
+        <li><a href="https://www.techradar.com/pro/microsoft-365-copilot-will-be-automatically-installed-on-365-clients-in-october" target="_blank" rel="noopener">TechRadar: Microsoft 365 Copilot auto-installs in Oct</a></li>
+      </ul>
+
+      <h3>9) What we’re testing</h3>
+      <p>Light-touch browser agents for research ops; measuring impact vs. curated reading lists.</p>
+    </div>
+  </section>
+
+  <!-- Contact (FormSubmit + thank-you overlay) -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <form id="contact-form" action="https://formsubmit.co/george@aiinfo.co.za" method="POST" class="card" style="display:grid;gap:12px">
+      <input type="hidden" name="_subject" value="New message from AI Info site">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <label>Full Name
+        <input name="name" type="text" required placeholder="Your name" />
+      </label>
+      <label>Email
+        <input name="email" type="email" required placeholder="you@example.com" />
+      </label>
+      <label>Message
+        <textarea name="message" rows="5" required placeholder="How can we help?"></textarea>
+      </label>
+      <button type="submit">Send</button>
+      <small>Prefer email? Write to <a href="mailto:george@aiinfo.co.za">george@aiinfo.co.za</a>.</small>
+    </form>
+  </section>
 
 </main>
 
-<footer>© <span id="year"></span> AI Info — All rights reserved</footer>
+<footer>
+  © <span id="year"></span> AI Info — All rights reserved
+</footer>
 
-<a class="whatsapp-fab" href="https://wa.me/27834425723" target="_blank" aria-label="Chat on WhatsApp">💬</a>
+<!-- WhatsApp floating action button -->
+<a class="whatsapp-fab" href="https://wa.me/27834425723?text=Hi%20there!%20I%27d%20like%20to%20chat%20about%20AI%20Info." target="_blank" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M19.11 17.07c-.27-.14-1.6-.8-1.85-.89-.25-.09-.43-.14-.61.14-.18.27-.7.89-.86 1.07-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.18-1.34-.8-.71-1.34-1.58-1.5-1.85-.16-.27-.02-.41.12-.54.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.54-.45-.46-.61-.46-.16 0-.34-.02-.52-.02s-.48.07-.73.34c-.25.27-.96.94-.96 2.28s.99 2.65 1.13 2.83c.14.18 1.95 2.97 4.73 4.17.66.28 1.18.45 1.58.58.66.21 1.27.18 1.75.11.53-.08 1.6-.65 1.82-1.28.23-.63.23-1.17.16-1.28-.07-.11-.25-.18-.52-.32z"/><path fill="currentColor" d="M26.32 5.66C23.52 2.84 19.86 1.33 16 1.33 8.32 1.33 2.09 7.56 2.09 15.25c0 2.47.64 4.88 1.86 7.01L1.33 30.67l8.61-2.24a14.84 14.84 0 0 0 6.06 1.29h0c7.68 0 13.92-6.23 13.92-13.92 0-3.72-1.45-7.21-4.26-10.14zM16 27.98h0c-2.02 0-4.01-.53-5.76-1.53l-.41-.24-5.11 1.33 1.37-4.98-.26-.43a11.97 11.97 0 0 1-1.83-6.29c0-6.6 5.37-11.98 11.98-11.98 3.2 0 6.2 1.25 8.47 3.52a11.86 11.86 0 0 1 3.5 8.47c0 6.6-5.38 11.98-11.98 11.98z"/></svg>
+</a>
+
+<!-- Thank-you overlay -->
+<div id="thankyou-overlay" role="dialog" aria-modal="true" aria-labelledby="thanks-title">
+  <div class="sheet">
+    <h3 id="thanks-title" style="margin-top:0">Thanks — we’ve got your message!</h3>
+    <p>We’ll be in touch shortly.</p>
+    <button id="close-thanks" type="button">Close</button>
+  </div>
+</div>
 
 <script>
-document.getElementById("year").textContent=new Date().getFullYear();
+  // Year
+  document.getElementById("year").textContent=new Date().getFullYear();
+
+  // Intercept FormSubmit to show thank-you overlay without navigating away
+  (function(){
+    var form=document.getElementById('contact-form');
+    if(!form) return;
+    form.addEventListener('submit',function(){
+      setTimeout(function(){
+        var lay=document.getElementById('thankyou-overlay');
+        if(lay) lay.style.display='flex';
+      },200);
+    });
+    var close=document.getElementById('close-thanks');
+    if(close){
+      close.addEventListener('click',function(){
+        var lay=document.getElementById('thankyou-overlay');
+        if(lay) lay.style.display='none';
+      });
+    }
+  })();
 </script>
 
 </body>
 </html>
+
+</body>
+</html>
+
