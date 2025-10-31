@@ -1,80 +1,189 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>AI to Eye — Newsletter</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body{
-  background:#0f1c33;color:white;
-  font-family:system-ui;
-  max-width:800px;margin:auto;
-  padding:30px;line-height:1.6;
-}
-a{color:#4cb5ff;text-decoration:none;}
-.card{
-  background:#142544;
-  border:1px solid #203656;
-  border-radius:14px;
-  padding:20px;
-}
-nav a{margin-right:16px;}
-h1{font-size:2.2rem;}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI to Eye — Newsletter</title>
+  <meta name="description" content="AI to Eye — Humour, clarity and practical AI insights — for humans, not engineers." />
+  <link rel="canonical" href="newsletter.html" />
+  <style>
+    :root{
+      --brand:#0a66c2;
+      --ink:#0b0b0b;
+      --muted:#565b65;
+      --bg:#ffffff;
+      --card:#f7f8fa;
+      --border:#e6e8ec;
+      --radius:14px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:var(--bg);color:var(--ink);line-height:1.6}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);z-index:50}
+    .container{max-width:1100px;margin:0 auto;padding:0 16px}
+    nav ul{display:flex;gap:18px;list-style:none;padding:12px 0;margin:0;justify-content:center}
+    nav a{padding:10px 14px;border-radius:12px;font-weight:600}
+    nav a[aria-current="page"], nav a:hover{background:var(--card)}
+    .hero{background:linear-gradient(135deg,#0b0f19,#0e1a32);color:#fff;text-align:center;padding:70px 16px 60px}
+    .hero img{width:140px;margin-bottom:16px}
+    h1{font-size:clamp(1.8rem,4vw,2.6rem);margin:.2rem 0 .4rem}
+    .sub{color:#d9e1ff}
+    section{padding:36px 0}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px}
+    .grid{display:grid;gap:16px}
+    @media(min-width:760px){ .grid.cols-2{grid-template-columns:1.2fr .8fr} }
+    footer{border-top:1px solid var(--border);padding:28px 0;color:var(--muted);text-align:center}
+    .whatsapp-fab{position:fixed;right:18px;bottom:18px;width:56px;height:56px;border-radius:50%;
+      display:grid;place-items:center;background:#25D366;color:#fff;font-size:28px;
+      box-shadow:0 6px 16px rgba(0,0,0,.2);z-index:9999}
+    .whatsapp-fab:hover{transform:translateY(-2px)}
+    #thankyou-overlay{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.6);z-index:99999}
+    #thankyou-overlay .sheet{background:#fff;padding:28px;border-radius:16px;width:min(520px,92%);text-align:center}
+    .issue h2{margin:.2rem 0 0.6rem}
+    .pill{display:inline-block;border:1px solid var(--border);background:#fff;border-radius:999px;padding:6px 10px;margin:2px 8px 2px 0;font-size:.9rem}
+    .toc{display:flex;flex-wrap:wrap;gap:8px}
+  </style>
 </head>
 <body>
-<nav>
-<a href="index.html">Home</a>
-<a href="newsletter.html">Newsletter</a>
-<a href="index.html#contact">Contact</a>
-</nav>
 
-<h1>AI to Eye — Issue #1</h1>
-<p><em>Human-friendly AI insights for real-world businesses</em></p>
+<header>
+  <div class="container">
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#ai-officer">AI Officer</a></li>
+        <li><a href="index.html#products">Products</a></li>
+        <li><a href="newsletter.html" aria-current="page">AI to Eye</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-<div class="card">
-<h2>Headline</h2>
-<p><strong>AI tools are now default — not optional.</strong></p>
-
-<h2>Why it matters</h2>
-<p>Your staff are already using AI tools. Better to guide and measure it than ignore it.</p>
-
-<h2>Quick Wins</h2>
-<ul>
-<li>One-page AI staff policy</li>
-<li>Create “AI wins” board</li>
-<li>Pilot 1 workflow automation</li>
-</ul>
-
-<h2>Risks</h2>
-<p>Shadow workflows, data oversharing, unnoticed model changes.</p>
-
-<h2>Case Snippet</h2>
-<p>Proposal drafting cut 35% by prompt templates + vetted content library.</p>
-
-<h2>Tool Spotlight</h2>
-<p>Gemini in Chrome — page summaries + task automation baked into browser.</p>
-
-<h2>Prompt Template</h2>
-<pre style="white-space:pre-wrap;background:#0f1c33;padding:12px;border-radius:10px;border:1px solid #203656;">
-You are my &lt;role&gt;.
-Goal: &lt;goal&gt;.
-Use this context:
- - &lt;bullet points&gt;
-
-Output: &lt;format&gt;.
-Then suggest 3 improvements.
-</pre>
-
-<h2>Links</h2>
-<ul>
-<li><a href="https://www.reuters.com/technology">Reuters AI Updates</a></li>
-<li><a href="https://www.theverge.com/ai">The Verge AI</a></li>
-<li><a href="https://techradar.com/ai">TechRadar AI</a></li>
-</ul>
-
+<div class="hero">
+  <img src="ai_logo.png" alt="AI Info Logo">
+  <h1>AI to Eye — Newsletter</h1>
+  <p class="sub">Humour, clarity and practical AI insights — for humans, not engineers.</p>
+  <div style="margin-top:14px;">
+    <a href="#subscribe" style="display:inline-block;background:#0a66c2;color:#fff;border:1px solid #0a66c2;border-radius:12px;padding:10px 14px;">Subscribe via Email</a>
+    <a href="#issue-1" style="display:inline-block;margin-left:8px;background:#ffffff;color:#0a66c2;border:1px solid #0a66c2;border-radius:12px;padding:10px 14px;">Read latest issue</a>
+  </div>
 </div>
 
-<p><a href="index.html">← Back to website</a></p>
+<main class="container">
+  <section aria-label="Archive">
+    <div class="card">
+      <strong>Issues:</strong>
+      <div class="toc" role="list">
+        <span class="pill" role="listitem"><a href="#issue-1">Issue #1</a></span>
+        <!-- Add more issues here as you publish -->
+      </div>
+    </div>
+  </section>
+
+  <section id="issue-1" class="issue">
+    <div class="grid cols-2">
+      <article class="card">
+        <h2>Issue #1 — Latest</h2>
+        <p><em>Date:</em> <span id="issue1-date"></span></p>
+
+        <h3>Welcom'AI'ng</h3>
+        <p>Welcome aboard — a short hello, what’s inside, and one quick win to try today.</p>
+
+        <h3>Br'AI'nwaves</h3>
+        <p>Two or three laser-focused ideas to improve decisions or ops this week.</p>
+
+        <h3>'AI'chievements</h3>
+        <p>Wins from the field: time saved, quality boosted, or risk reduced.</p>
+
+        <h3>F'AI'lures</h3>
+        <p>What didn’t work (and why) so you don’t repeat it.</p>
+
+        <h3>Click b'AI't</h3>
+        <ul>
+          <li><a href="https://www.reuters.com/" target="_blank" rel="noopener">Useful industry read</a></li>
+          <li><a href="https://www.theverge.com/" target="_blank" rel="noopener">Product update worth noting</a></li>
+          <li><a href="https://techradar.com/" target="_blank" rel="noopener">Hands-on review / how-to</a></li>
+        </ul>
+
+        <h3>New and 'AI'xciting</h3>
+        <p>Launches, features, datasets and tools — one-paragraph summaries.</p>
+
+        <h3>'AI'gent Shoutout</h3>
+        <p>Spotlight on a person, partner or open-source project doing great work.</p>
+
+        <h3>'AI'nderstanding the Buzzwords</h3>
+        <p>One concept, decoded in plain English. No fluff, no maths degree required.</p>
+
+        <h3>Forthcoming 'AI'tractions</h3>
+        <p>What we’ll test next and what you can expect in the next issue.</p>
+      </article>
+
+      <aside class="card" id="subscribe">
+        <h3>Get AI to Eye by Email</h3>
+        <p>Free, occasional, and practical. Unsubscribe any time.</p>
+        <form action="https://formsubmit.co/george@aiinfo.co.za" method="POST" style="display:grid;gap:12px">
+          <input type="hidden" name="_subject" value="New AI to Eye subscriber">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <label>Email
+            <input type="email" name="email" placeholder="you@example.com" required>
+          </label>
+        <label>Name (optional)
+            <input type="text" name="name" placeholder="Your name">
+          </label>
+          <button type="submit" style="padding:11px 14px;border:1px solid var(--brand);background:var(--brand);color:#fff;border-radius:12px;cursor:pointer">Subscribe</button>
+          <small>We’ll send issues to your inbox and also post them here.</small>
+        </form>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <small>© <span id="year"></span> AI Info. All rights reserved.</small>
+  </div>
+</footer>
+
+<a class="whatsapp-fab" href="https://wa.me/27834425723?text=Hi!%20Please%20subscribe%20me%20to%20AI%20to%20Eye" target="_blank" aria-label="Chat on WhatsApp">💬</a>
+
+<div id="thankyou-overlay" role="dialog" aria-modal="true" aria-labelledby="thanks-title">
+  <div class="sheet">
+    <h3 id="thanks-title" style="margin-top:0">Thanks — you’re on the list!</h3>
+    <p>We’ll send the next issue straight to your inbox.</p>
+    <button id="close-thanks" type="button">Close</button>
+  </div>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  (function(){
+    var d=new Date();
+    var opts={year:'numeric',month:'long',day:'numeric'};
+    var el=document.getElementById('issue1-date');
+    if(el) el.textContent=d.toLocaleDateString(undefined,opts);
+  })();
+  (function(){
+    var forms=document.querySelectorAll('form[action^="https://formsubmit.co/"]');
+    forms.forEach(function(form){
+      form.addEventListener('submit', function(){
+        setTimeout(function(){
+          var lay=document.getElementById('thankyou-overlay');
+          if(lay) lay.style.display='flex';
+        }, 300);
+      });
+    });
+    var close=document.getElementById('close-thanks');
+    if(close){
+      close.addEventListener('click', function(){
+        var lay=document.getElementById('thankyou-overlay');
+        if(lay) lay.style.display='none';
+      });
+    }
+  })();
+</script>
+
 </body>
 </html>
